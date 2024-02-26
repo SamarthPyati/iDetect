@@ -1,0 +1,6 @@
+Cython==3.0.8
+numpy==1.26.4
+opencv-contrib-python==4.9.0.80
+pyobjc-core==10.1
+pyobjc-framework-Cocoa==10.1
+screeninfo==0.8.1
