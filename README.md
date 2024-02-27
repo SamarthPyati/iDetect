@@ -17,6 +17,8 @@ To set up the project, follow these simple steps:
    ```bash
    python3 main.py
    ```
+3. Quit: Press <b>`Q`</b>
+
 
 <!-- ## Features
 

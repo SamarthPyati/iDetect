@@ -7,9 +7,10 @@ from numba import njit
 VID_HEIGHT = 1080
 VID_WIDTH = 1920
 DEFAULT_FPS = 60
+
 # SETTING FUNCTIONS
 SET_AUTO_RESOLUTION = True
-RECOGNISE_TEXT = False
+RECOGNISE_TEXT = False                                      # Set True to enable text recognition (Camera footage would suffer)
 
 
 @njit
@@ -19,7 +20,6 @@ def recognise_text(_image):
 
 
 WINDOW_NAME = "WEBCAM"
-
 cap = cv2.VideoCapture(0)                                   # '0' -> default cam = webcam
 
 if SET_AUTO_RESOLUTION:
@@ -45,10 +45,11 @@ while cap.isOpened():
         __gray_scaled = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         cv2.imshow(WINDOW_NAME, __gray_scaled)
+        
         if RECOGNISE_TEXT:
             print(pytesseract.image_to_string(image=__img_cpy))
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):               # 'q' to quit
+        if cv2.waitKey(1) & 0xFF == ord('q'):               # 'Q' to quit
             break
 
     except KeyboardInterrupt:
