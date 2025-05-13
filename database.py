@@ -234,15 +234,15 @@ def delete_student(usn: int):
 if __name__ == "__main__":
     # Testing
     try:
-        # create_student(400, "Samarth Sanjay Pyati", "B.Tech CSE", 2023, "F", "Male", "faces/400.jpg")
-        # create_student(87, "Atharv Bhujannavar", "B.Tech CSE", 2023, "I", "Male", "faces/087.jpeg")
-        # create_student(426, "Shashwath Jain H.P", "B.Tech CSE", 2023, "F", "Male", "faces/426.jpeg")
-        # create_student(418, "Sharan S Gowda", "B.Tech CSE", 2023, "I", "Male", "faces/418.jpeg")
-        # create_student(490, "Sushruth", "B.Tech CSE", 2023, "I", "Male", "faces/490.jpeg")
-        # create_student(540, "Vishnu Bhardhwaj", "B.Tech CSE", 2023, "I", "Male", "faces/540.jpeg")
-        # create_student(18, "Akhil Dayanand", "BBA Law", 2023, "A", "Male", "faces/018.jpeg")
-        # update_credentials(400, year_join=2023)
-        # delete_student(18)
+        create_student(400, "Samarth Sanjay Pyati", "B.Tech CSE", 2023, "F", "Male", "faces/400.jpg")
+        create_student(87, "Atharv Bhujannavar", "B.Tech CSE", 2023, "I", "Male", "faces/087.jpeg")
+        create_student(426, "Shashwath Jain H.P", "B.Tech CSE", 2023, "F", "Male", "faces/426.jpeg")
+        create_student(418, "Sharan S Gowda", "B.Tech CSE", 2023, "I", "Male", "faces/418.jpeg")
+        create_student(490, "Sushruth", "B.Tech CSE", 2023, "I", "Male", "faces/490.jpeg")
+        create_student(540, "Vishnu Bhardhwaj", "B.Tech CSE", 2023, "I", "Male", "faces/540.jpeg")
+        create_student(18, "Akhil Dayanand", "BBA Law", 2023, "A", "Male", "faces/018.jpeg")
+        update_credentials(400, year_join=2023)
+        delete_student(18)
         print_all_student()
     except Exception as e:
         print(f"Error occurred during testing: {e}")
