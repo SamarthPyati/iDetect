@@ -86,6 +86,8 @@ class FaceRecognition:
     def desired_name_format(usn: int) -> str:
         """ Return upper() of first name only so that it can fix in bbox """
         name: str = get_name_from_usn(usn)
+        if name is None:
+            return f"Unknown (1RVU23CSE{usn})"
         name = name.split(' ')[0]
         return f"{name.upper()} (1RVU23CSE{usn})"
 
